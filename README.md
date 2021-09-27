@@ -1,8 +1,12 @@
 Put this in your mechanicjob/client.lua
-
+The trigger for the menu is 'upgradecar'
 
 ```
-
+RegisterNetEvent('upgradecar')
+AddEventHandler('upgradecar', function()
+    local vehicle = QBCore.Functions.GetClosestVehicle()
+    local plate = GetVehicleNumberPlateText(vehicle)
+    
     veh = QBCore.Functions.GetClosestVehicle()
     turbo = IsToggleModOn(veh, 18)
     if turbo == 0 then
@@ -130,4 +134,4 @@ Put this in your mechanicjob/client.lua
             }
         },        
     })
-end) 
+end)
