@@ -1,6 +1,6 @@
 Put this in your mechanicjob/client.lua
 
-https://user-images.githubusercontent.com/57848836/130697551-a4d84a65-a2a1-47d3-b014-5d915e22e294.png
+![](images/you-picture.png)
 
 ```RegisterNetEvent('upgradecar')
 AddEventHandler('upgradecar', function()
