@@ -1,12 +1,7 @@
 Put this in your mechanicjob/client.lua
 
-![](images/you-picture.png)
 
-```RegisterNetEvent('upgradecar')
-AddEventHandler('upgradecar', function()
-    local vehicle = QBCore.Functions.GetClosestVehicle()
-    local plate = GetVehicleNumberPlateText(vehicle)
-
+```
 
     veh = QBCore.Functions.GetClosestVehicle()
     turbo = IsToggleModOn(veh, 18)
